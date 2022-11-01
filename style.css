@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --blue: #031264;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #ffffff;
+    font-weight: lighter;
+    width: 100vw;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-weight: 100;
+    padding: 0;
+  }
+  h2{
+    font-size: 35px;
+    margin-bottom:10px;
+  }
+  h3{
+    font-size: 30px;
+  }
+h5{
+    font-size: 25px;
+  }
+  h6{
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  } 
+ p{
+    font-size: 14px;
+    font-weight: lighter;
+  }
+   header nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+   
+}
+nav li:hover{
+  border-bottom: solid 2px var(--blue);
+}
+header nav a:hover{
+  font-weight: bold;
+}
+
+header nav #logo{
+    height: 70px;
+    margin-top: 10px;
+}
+header nav .options-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}  
+header nav .options-menu ul{
+    display: flex; 
+    list-style: none;
+}
+header nav .options-menu li{
+    text-transform: uppercase;
+    padding: 10px;
+}
+ nav .options-menu a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+header nav .icons-menu i{
+    font-size: 20px;
+}
+
+.add-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 8px;
+  padding: 0;
+}
+
+.icons-menu {
+  position: absolute;
+  visibility: hidden;
+}
+  #banner {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/home-img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+  }
+
+ .msg-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    color:#fff;
+    text-align: center;
+    padding: 20px 10px;
+    top: 50%;
+   
+  }
+  #banner .msg-banner h1, .msg-banner p{
+    font-weight: 100;
+  }
+
+  #banner .msg-banner p{
+    font-size: 20px;
+  }
+  #banner button{
+    width: 130px;
+    margin-top: 50px;
+    background-color:var(--blue);
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    border:none;
+    text-transform: uppercase;
+  }
+  #banner button a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #banner button:hover{
+    background-color: black;
+  }
+  #projects {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 10px;
+     margin: 100px 0;
+ 
+ }
+  
+  #projects, .message-icons, .menu-down {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+  .size-icon{
+    width: 50px;
+    height: 50px;
+  }
+#gallery {
+    display: grid;
+    grid-template-columns: 50vw 18vw 30vw;
+    grid-template-rows: 40vh 40vh;
+  }
+  #gallery > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#services{
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10px;
+
+}
+  .align-text-img, .img-last-news{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+  #services img, .last-news img{
+    width: 100%;
+    height: 40vh;
+  }
+  #services p{
+    font-size: 12px;
+  }
+  #activies{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #activies img{
+    width: 50%;
+    min-width: 300px; 
+    height: auto;
+  }
+  .activies-msg{
+    width: 50%;
+    background: url('./img/bg.jpg');
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 40px 40px 40px;
+}
+  #activies .align{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+
+  }
+  #activies .progress-bar{
+    height: 5px;
+  background-color: rgb(45, 44, 44);;
+  display: flex;
+  }
+.progress-bar::before{
+  content: "";
+  width: 80%;
+  background-color:var(--blue);
+} 
+.progress-bar:last-child::before{
+    content: "";
+    width: 50%;
+    background-color:var(--blue);
+}
+  #last-news{
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+  
+
+  }
+  .last-news-msg{
+    text-align: left;
+    background-color: #fff;
+    margin-top: 0;
+    padding: 20px;
+  }
+  .last-news-msg p{
+    font-size: 12px;
+  }
+  div.last-news-msg p:last-child{
+    margin-top: 10px;
+    color: gray;
+  }
+  .img-last-news img{
+    width: 100%;
+    height: 40vh;
+  }
+  .img-last-news > div{
+    width: 25%;
+  }
+  .p-red{
+    font-size: 12px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  
+  #contacts{
+    background-color:  rgb(45, 44, 44);
+    height: 40vh;
+  }
+  #contacts > div{
+    padding: 10px;
+    color: #fff;
+  }
+  #message {
+    background-color: var(--blue);
+  }
+  #message h3{
+    color: #fff;
+  }
+  .message-icons{
+    background-color: white;
+    margin: 0 90px;
+    padding: 60px 5px;
+    position: relative;
+    bottom: 70px;
+
+  }
+  #message button{
+    width: 130px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--blue);
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  #message button a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #message button:hover{
+    background-color: black;
+    border: none;
+  }
+  #menu-down {
+   
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #menu-down > div{
+    width: 20%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  #menu-down img{
+    width: 180px;
+    height: auto;
+  }
+  #menu-down h6, .menu-down span{
+    color: white;
+    padding: 10px;
+  }
+  #menu-down p{
+    color: gray;
+    padding: 10px;
+  }
+  #menu-down li{
+    list-style: none;
+    padding: 10px;
+  }
+  #menu-down a{
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+  }
+  #menu-down a:hover{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .footer {
+    background-color:rgb(45, 44, 44);
+    color: #ffffff;
+      padding: 30px 10px 10px 10px;
+      text-align: center;
+   
+  }
+  .footer span{
+    text-transform: uppercase;
+  }
+
+
+ 
+
+  /* ABOUT */
+
+ #banner-about {
+  width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/about-img/banner-about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  #about{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .about-msg{
+    width: 50%;
+  }
+  .about-msg h2{
+    padding-bottom: 20px;
+  }
+  .about-img{
+    width:100%;
+    height: 40vh;
+  }
+  #about-gallery{
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 100px 20px 80px 20px;
+  }
+  #about-gallery img{
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* SERVICIES */
+  .bg-services{
+    background-color: #e1e1e1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* CONTACT */
+
+  #map{
+    width: 100%;
+  }
+  #contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+  }
+  .contact-informations{
+    width: 50%;
+    text-align: left;
+    padding:30px 50px;
+  }
+
+  .contact-informations h6{
+    margin-top: 30px;
+  }
+  .contact-informations div:last-child{
+    margin-top: 30px;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    padding: 50px;
+  }
+  
+  .form label h6{
+    padding-top: 10px;
+    margin-left: 5px;
+  }
+  .form input, textarea{
+    width: 100%;
+    margin: 5px;
+    padding: 20px;
+    border: solid 1px #e1e1e1
+  }
+  .form input{
+    height: 5vh;
+  }
+  
+  .form button{
+    width: 100px;
+    margin: 5px 0px 0px 5px;
+    background-color:var(--blue);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    border:none;
+    text-transform: uppercase;
+  }
+  .form button:hover{
+    background-color: black;
+  }
+  .error{
+    font-size: 14px;
+    color: red;
+  }
+  .success{
+    font-size: 18px;
+    font-weight: bolder;
+    color: green;
+    padding: 10px 0;
+  }
+/* MEDIA */
+@media (min-width:1200px){
+  #banner .msg-banner{
+     padding: 80px 150px;
+   }
+   #banner-about {
+     width: 100%;
+     height: 60vh;
+   
+ }
+}
+ @media (max-width:1200px){
+   header nav .options-menu ul {
+     display: flex;
+     flex-direction: column;
+     background: #000;
+   }
+   
+   header nav .options-menu a{
+     color: white;
+   }
+   header nav .options-menu .hamburguer-menu{
+     color: black;
+   }
+   
+   .align-text-img{
+     flex-direction: column;
+   }
+   .activies-msg {
+     width: 100%;
+   }
+   #activies img{
+     width: 100%;
+   }
+   .align-text-img{
+     flex-direction: column;
+
+   }
+   .img-last-news{
+     flex-direction: column;
+   }
+   #last-news .img-last-news > div {
+     width: auto;
+     height: auto;
+ }
+ #menu-down {
+   padding-left: 20px;
+ }
+ 
+ #message h3{
+   font-size: 20px;
+ }
+ 
+  #menu-down > div{
+     width: 100%;
+ }
+ #menu-down img {
+   margin-top: 20px;
+   width: 40%;
+   height: auto;
+ }  
+ }
+
+ @media only screen and (max-width: 920px) {
+   .add-menu {
+     background-color: #e1e1e1;
+     flex-direction: column;
+     position: absolute;
+     top: 80px;
+     right: 0;
+     padding: 16px;
+     visibility: hidden;
+   }
+
+   .icons-menu {
+       visibility: visible;
+   }
+
+   .show {
+       visibility: visible;
+   }
+ }
+
+  @media (max-width: 600px) {
+    .form, .contact-informations{
+      width: 100%;
+    }
+  }
