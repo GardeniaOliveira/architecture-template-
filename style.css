@@ -44,6 +44,9 @@ h5{
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    background-color: #fff;
+    position: fixed;
+   
    
 }
 nav li:hover{
